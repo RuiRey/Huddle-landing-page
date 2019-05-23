@@ -1,0 +1,33 @@
+$bp-mobile: 375px;
+
+$color-primary: hsl(322, 100%, 66%);
+
+$color-pale-cyan: rgb(234, 250, 255);
+$color-dark-cyan: hsl(192, 100%, 9%);
+$color-grayish-blue: hsl(208, 11%, 55%);
+
+$font-primary: 'Open Sans', sans-serif;
+$font-heading: 'Poppins', sans-serif;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 112.5%; //1rem = 18px;
+}
+
+body{
+    font-family: $font-primary;
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 57vh repeat(3, min-content);
+}

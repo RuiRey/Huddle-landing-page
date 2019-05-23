@@ -1,0 +1,47 @@
+.btn{
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        font-size: .8rem;
+        font-weight: 700;
+
+        // change for the button element
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 1rem rgba(black, 0.2);
+    }
+
+    &-pink{
+        color: $color-pale-cyan;
+        background-color: $color-primary;
+    }
+}
+
+%heading {
+    font-family: $font-heading;
+    font-weight: 600;
+    color: $color-dark-cyan;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
