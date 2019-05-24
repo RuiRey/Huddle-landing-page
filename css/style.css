@@ -36,20 +36,21 @@ body {
   color: #eafaff;
   background-color: #ff52bf; }
 
-.heading-1, .heading-2 {
+.heading-1, .heading-2, .heading-3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #00252e; }
+  color: #00252e;
+  line-height: 1.5;
+  letter-spacing: 1px; }
 
 .heading-1 {
-  font-size: 2rem;
-  line-height: 1.5;
-  letter-spacing: 1px; }
+  font-size: 2rem; }
 
 .heading-2 {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  letter-spacing: 1px; }
+  font-size: 1.7rem; }
+
+.heading-3 {
+  font-size: 1.4rem; }
 
 .header {
   padding: 4rem;
@@ -116,3 +117,20 @@ body {
       padding-top: 1rem;
       color: #808d99;
       line-height: 1.5; }
+  .list__questionBox {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 8rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 6rem; }
+    .list__questionBox-btn {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      width: 20rem;
+      justify-self: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-size: 1rem; }

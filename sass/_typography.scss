@@ -30,18 +30,22 @@
     font-family: $font-heading;
     font-weight: 600;
     color: $color-dark-cyan;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 .heading-1 {
     @extend %heading;
     font-size: 2rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    
 }
 
 .heading-2 {
     @extend %heading;
+    font-size: 1.7rem;
+}
+
+.heading-3 {
+    @extend %heading;
     font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
 }

@@ -36,4 +36,27 @@
             line-height: 1.5;
         }
     }
+
+    &__questionBox {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4rem 8rem;
+        border-radius: 15px;
+        box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.15);
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        margin-top: 6rem;
+
+        &-btn {
+            box-shadow: 0 .5rem 1rem rgba(black, 0.2);
+            width: 20rem;
+            justify-self: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+    }
 }
