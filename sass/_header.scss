@@ -1,10 +1,15 @@
 .header {
+    width: 100vw;
     padding: 0 4rem;
     background-image: linear-gradient(rgba($color-pale-cyan, .7), rgba($color-pale-cyan, .7)) ,url(../images/bg-hero-desktop.svg);
     background-size: cover;
 
+    @media only screen and (max-width: $bp-mobile) {
+        padding: 1rem;
+        background-image: linear-gradient(rgba($color-pale-cyan, .6), rgba($color-pale-cyan, .6)) ,url(../images/bg-hero-mobile.svg);
+    }
+
     &__container {
-        width: 100%;
         max-width: 80rem;
         margin: 0 auto;
 
@@ -14,12 +19,24 @@
         
         grid-column-gap: 2rem;
         color: $color-dark-cyan;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-template-rows: repeat(3, min-content);
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+        }
     }
 
     &__logo{
         height: 1.8rem;
         justify-self: left;
         align-self: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            height: .8rem;
+        }
     }
 
     &__btn{
@@ -31,19 +48,38 @@
         align-self: center;
         box-shadow: 0 .5rem 1rem rgba(black, 0.1);
         color: $color-dark-cyan;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: .5rem;
+            grid-column: 1 / -1;
+            width: 6.5rem;
+            height: 2rem;
+        }
     }
 
     &__left {
         padding-top: 8vh;
+        display: grid;
         grid-template-rows: repeat(3, min-content);
         grid-gap: 1.5rem;
 
-        display: grid;
+        @media only screen and (max-width: $bp-mobile) {
+            width: 80vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
     }
 
     &__btn-2 {
         width: 15rem;
         justify-self: left;
+
+        @media only screen and (max-width: $bp-mobile) {
+            width: 60vw;
+            max-width: 20rem;
+            justify-self: center;
+        }
     }
 
     &__text{
@@ -56,5 +92,10 @@
         width: 92%;
         max-width: 40rem;
         justify-self: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            padding-top: 3rem;
+            width: 80vw;
+        }
     }
 }

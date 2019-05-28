@@ -13,6 +13,11 @@
         // change for the button element
         border: none;
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-mobile) {
+            padding: .5rem 1.5rem;
+            background-color: white;
+        }
     }
 
     &:hover {
@@ -32,12 +37,19 @@
     color: $color-dark-cyan;
     line-height: 1.5;
     letter-spacing: 1px;
+
+    @media only screen and (max-width: $bp-mobile) {
+        line-height: 1.3;
+    }
 }
 
 .heading-1 {
     @extend %heading;
     font-size: 2rem;
     
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 1.3rem;
+    }
 }
 
 .heading-2 {
