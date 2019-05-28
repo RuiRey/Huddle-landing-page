@@ -1,0 +1,120 @@
+.footer {
+    padding: 0 6rem 1rem 6rem;
+    background-color: $color-dark-cyan;
+    color: $color-pale-cyan;
+
+    &__questionBox {
+        z-index: 100;
+        max-width: 43rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3.5rem 7rem;
+        border-radius: 15px;
+        box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.15);
+        background-color: white;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        transform: translateY(-10rem);
+
+        &-btn {
+            box-shadow: 0 .5rem 1rem rgba(black, 0.2);
+            width: 20rem;
+            justify-self: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-rows: repeat(4, min-content);
+        grid-row-gap: 2rem;
+
+        margin-top: -4rem;
+    }
+
+    &__logo {
+        height: 2rem;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 2.2fr repeat(3, 1fr);
+        grid-column-gap: 5rem;
+
+        &-col1 {
+            display: grid;
+            grid-template-rows: repeat(3, min-content);
+            grid-row-gap: 1.5rem;
+            font-size: .8rem;
+
+            &__item{
+                width: 100%;
+                display: grid;
+                grid-template-columns: min-content 1fr;
+                grid-column-gap: 1rem;
+
+                &-icon {
+                    width: 1rem;
+                    padding-top: .2rem;
+                }
+            }
+        }
+
+        &-col2 {
+            display: grid;
+            grid-template-rows: repeat(3, min-content);
+            grid-row-gap: 1.5rem;
+            font-size: .9rem;
+            
+            &__link:link,
+            &__link:visited {
+                color: $color-pale-cyan;
+                text-decoration: none;
+                transition: all .3s;
+            }
+
+            &__link:hover,
+            &__link:active {
+                transform: translateY(-3px);
+            }
+        }
+
+        &-col3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 1rem;
+            
+        }
+    }
+
+    &__copyright {
+        font-size: .7rem;
+        justify-self: right;
+    }
+
+    &__attribution {
+        font-size: .7rem;
+        justify-self: center;
+    }
+    .attribution a { color:$color-pale-cyan; }
+
+
+    
+}
+
+.fab {
+    transform: scale(1.4);
+    align-self: start;
+}
+
+
+// .attribution { font-size: 11px; text-align: center; color: $color-pale-cyan; }
+// .attribution a { color:$color-pale-cyan; }

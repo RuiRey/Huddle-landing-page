@@ -10,28 +10,28 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="container">
 
   <header class="header">
-    <img src="images/logo.svg" alt="Huddle logo" class="header__logo">
-    <button class="btn header__btn">Try It Free</button>
-    <div class="header__left">
-      <h1 class="heading-1">Build The Community Your Fans Will Love</h1>
-      <p class="header__text">
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
-      </p>
-      <button class="btn btn-pink header__btn-2">Get Started For Free</button>
-    </div>
+    <div class="header__container">
+      <img src="images/logo.svg" alt="Huddle logo" class="header__logo">
+      <button class="btn header__btn">Try It Free</button>
+      <div class="header__left">
+        <h1 class="heading-1">Build The Community Your Fans Will Love</h1>
+        <p class="header__text">
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
+        </p>
+        <button class="btn btn-pink header__btn-2">Get Started For Free</button>
+      </div>
     
-    <img class="header__img" src="images/illustration-mockups.svg" alt="illustration mockups">
+      <img class="header__img" src="images/illustration-mockups.svg" alt="illustration mockups">
+    </div>
   </header>
 
   <div class="list">
@@ -66,50 +66,75 @@
       <img src="images/illustration-your-users.svg" alt="Your Users" class="list__item-img">
     </div>
 
-    <div class="list__questionBox">
-      <h2 class="heading-2">Ready To Build Your Community?</h2>
-      <button class="btn btn-pink list__questionBox-btn">Get Started For Free</button>
-    </div>
-
   </div>
 
   
-
   <footer class="footer">
-    footer
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Rey Wang</a>.
-    </p>
+    <div class="footer__questionBox">
+      <h2 class="heading-2">Ready To Build Your Community?</h2>
+      <button class="btn btn-pink footer__questionBox-btn">Get Started For Free</button>
+    </div>
+
+    <div class="footer__container">
+      <img src="images/footer__logo.svg" alt="logo" class="footer__logo">
+    
+      <div class="footer__info">
+        <div class="footer__info-col1">
+
+          <div class="footer__info-col1__item">
+            <img src="images/icon-location.svg" alt="Location" class="footer__info-col1__item-icon">
+            <p class="footer__info-col1__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          
+          <div class="footer__info-col1__item">
+            <img src="images/icon-phone.svg" alt="Phone No." class="footer__info-col1__item-icon">
+            <p class="footer__info-col1__item-text">+1-543-123-4567</p>
+          </div>
+
+          <div class="footer__info-col1__item">
+            <img src="images/icon-email.svg" alt="email" class="footer__info-col1__item-icon">
+            <p class="footer__info-col1__item-text">example@huddle.com</p>
+          </div>
+
+        </div>
+
+        <div class="footer__info-col2">
+          <a href="#" class="footer__info-col2__link">About Us</a>
+          <a href="#" class="footer__info-col2__link">What We Do</a>
+          <a href="#" class="footer__info-col2__link">FAQ</a>
+        </div>
+        <div class="footer__info-col2">
+          <a href="#" class="footer__info-col2__link">Career</a>
+          <a href="#" class="footer__info-col2__link">Blog</a>
+          <a href="#" class="footer__info-col2__link">Contact Us</a>
+        </div>
+        <div class="footer__info-col3">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+          <span>&copy; Copyright 2018 Huddle. All rights reserved.</span>
+      </div>
+
+      <div class="footer__attribution">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Rey Wang</a>.
+        </p>
+      </div>
+
+    </div>
+
+
+    
   </footer>
 
-  <!-- Try It Free
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  Grow Together
-
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
+  <!-- 
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
   incididunt ut labore et dolore magna aliqua
