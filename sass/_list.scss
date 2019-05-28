@@ -7,12 +7,12 @@
     grid-row-gap: 2rem;
 
     @media only screen and (max-width: $bp-mobile) {
-        padding: 3rem 0 15rem 0;
+        padding: 3rem 0 12rem 0;
     }
 
     &__item {
         width: 90vw;
-        max-width: 80rem;
+        max-width: 70rem;
         margin-left: auto;
         margin-right: auto;
         padding: 2rem;
